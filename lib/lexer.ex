@@ -1,3 +1,6 @@
+# Diego Abdo
+# A01783808
+
 defmodule Lexer do
   # List of tuples with a regex and its corresponding class
   @regex_patterns [
