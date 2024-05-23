@@ -1,0 +1,47 @@
+html {
+  background-color: #212121;
+}
+
+.function-name {
+  color: lightskyblue;
+}
+
+.punctuation {
+  color: white;
+}
+
+.keyword {
+  color: darkorchid;
+}
+
+.string {
+  color: greenyellow;
+}
+
+.comment {
+  color: gray;
+}
+
+.number-constant {
+  color: lightgreen;
+}
+
+.identifier {
+  color: lightcoral;
+}
+
+.operator {
+  color: violet;
+}
+
+.include {
+  color: darkorchid;
+}
+
+.angle-brackets {
+  color: greenyellow;
+}
+
+.character {
+  color: greenyellow;
+}
