@@ -10,6 +10,21 @@ Aquí explicaré las funciones más importantes del lexer:
 
 Esta es la lista de expresiones regulares que se usa para detectar tokens. Cada expresion regular tiene una clase asociada que se usa después en el archivo CSS para colorear los elementos de HTML.
 
+Explicaré rápido que es lo que hace cada regex:
+
+- Keyword: Hace math con las palabras reservadas de C.
+- Angle-Brackets: Hace match cualquier cosa que esté entre angle brackets.
+- Function Name: Hace match con algún nombre que venga seguido de un paréntesis.
+- Punctuation: Hace match con cualquier llave, corchete, paréntesis, punto y coma, etc.
+- String: Hace match con cualquier cosa que esté entre comillas dobles.
+- Comment: Hace match con cualquier cosa que esté después de dos diagonales.
+- Number Constant: Hace match con cualquier número o flotante.
+- Operator: Hace match con cualquiera de los operadores lógicos, aritméticos o bitwise de C.
+- Include: Hace match con la palabra include.
+- Character: Hace match con cualquier elemento que este entre comillas simples.
+- Identifier: Hace match con cualquier combinación de letras, números y guiones bajos que empiece con una letra.
+- Whitespace: Hace match con cualquier número de espacios.
+
 ```elixir
 @regex_patterns [
     {~r/^(void|return|if|else|while|for|int|float|double|char|true|false|struct|continue|do|enum|extern|goto|long|short|signed|sizeof|static|switch|unsigned|union|typedef)\b/,

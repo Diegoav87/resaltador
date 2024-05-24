@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>C Code Highlighting</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<pre id="code">
+<span class="include">#include</span> <span class="angle-brackets">&lt;stdio.h&gt;</span>
+<span class="include">#include</span> <span class="angle-brackets">&lt;stdlib.h&gt;</span>
+<span class="include">#include</span> <span class="angle-brackets">&lt;string.h&gt;</span>
+
+<span class="comment">// Define a structure</span>
+<span class="keyword">struct</span> <span class="identifier">Person</span> <span class="punctuation">{</span>
+    <span class="keyword">char</span> <span class="identifier">name</span><span class="punctuation">[</span><span class="number-constant">50</span><span class="punctuation">]</span><span class="punctuation">;</span>
+    <span class="keyword">int</span> <span class="identifier">age</span><span class="punctuation">;</span>
+<span class="punctuation">}</span><span class="punctuation">;</span>
+
+<span class="comment">// Function prototypes</span>
+<span class="keyword">void</span> <span class="function-name">printArray</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">arr</span><span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="keyword">int</span> <span class="identifier">size</span><span class="punctuation">)</span><span class="punctuation">;</span>
+<span class="keyword">void</span> <span class="function-name">writeToFile</span><span class="punctuation">(</span><span class="identifier">const</span> <span class="keyword">char</span> <span class="operator">*</span><span class="identifier">filename</span><span class="punctuation">,</span> <span class="identifier">const</span> <span class="keyword">char</span> <span class="operator">*</span><span class="identifier">content</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+<span class="keyword">int</span> <span class="function-name">main</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="comment">// Array declaration and initialization</span>
+    <span class="keyword">int</span> <span class="identifier">numbers</span><span class="punctuation">[</span><span class="punctuation">]</span> <span class="operator">=</span> <span class="punctuation">{</span><span class="number-constant">10</span><span class="punctuation">,</span> <span class="number-constant">20</span><span class="punctuation">,</span> <span class="number-constant">30</span><span class="punctuation">,</span> <span class="number-constant">40</span><span class="punctuation">,</span> <span class="number-constant">50</span><span class="punctuation">}</span><span class="punctuation">;</span>
+    <span class="keyword">int</span> <span class="identifier">size</span> <span class="operator">=</span> <span class="keyword">sizeof</span><span class="punctuation">(</span><span class="identifier">numbers</span><span class="punctuation">)</span> <span class="operator">/</span> <span class="keyword">sizeof</span><span class="punctuation">(</span><span class="identifier">numbers</span><span class="punctuation">[</span><span class="number-constant">0</span><span class="punctuation">]</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// Print the array</span>
+    <span class="function-name">printArray</span><span class="punctuation">(</span><span class="identifier">numbers</span><span class="punctuation">,</span> <span class="identifier">size</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// Pointer usage</span>
+    <span class="keyword">int</span> <span class="operator">*</span><span class="identifier">ptr</span> <span class="operator">=</span> <span class="identifier">numbers</span><span class="punctuation">;</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;The first element is %d\n&quot;</span><span class="punctuation">,</span> <span class="operator">*</span><span class="identifier">ptr</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// Structure usage</span>
+    <span class="keyword">struct</span> <span class="identifier">Person</span> <span class="identifier">person1</span><span class="punctuation">;</span>
+    <span class="function-name">strcpy</span><span class="punctuation">(</span><span class="identifier">person1</span><span class="punctuation">.</span><span class="identifier">name</span><span class="punctuation">,</span> <span class="string">&quot;Alice&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="identifier">person1</span><span class="punctuation">.</span><span class="identifier">age</span> <span class="operator">=</span> <span class="number-constant">30</span><span class="punctuation">;</span>
+
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;Person: %s, Age: %d\n&quot;</span><span class="punctuation">,</span> <span class="identifier">person1</span><span class="punctuation">.</span><span class="identifier">name</span><span class="punctuation">,</span> <span class="identifier">person1</span><span class="punctuation">.</span><span class="identifier">age</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// Dynamic memory allocation</span>
+    <span class="keyword">int</span> <span class="operator">*</span><span class="identifier">dynamicArray</span> <span class="operator">=</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="operator">*</span><span class="punctuation">)</span><span class="function-name">malloc</span><span class="punctuation">(</span><span class="identifier">size</span> <span class="operator">*</span> <span class="keyword">sizeof</span><span class="punctuation">(</span><span class="keyword">int</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="keyword">if</span> <span class="punctuation">(</span><span class="identifier">dynamicArray</span> <span class="operator">==</span> <span class="identifier">NULL</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="function-name">fprintf</span><span class="punctuation">(</span><span class="identifier">stderr</span><span class="punctuation">,</span> <span class="string">&quot;Memory allocation failed\n&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="keyword">return</span> <span class="number-constant">1</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">0</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;</span> <span class="identifier">size</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="identifier">dynamicArray</span><span class="punctuation">[</span><span class="identifier">i</span><span class="punctuation">]</span> <span class="operator">=</span> <span class="identifier">numbers</span><span class="punctuation">[</span><span class="identifier">i</span><span class="punctuation">]</span> <span class="operator">*</span> <span class="number-constant">2</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+
+    <span class="comment">// Print dynamically allocated array</span>
+    <span class="function-name">printArray</span><span class="punctuation">(</span><span class="identifier">dynamicArray</span><span class="punctuation">,</span> <span class="identifier">size</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// File I/O operations</span>
+    <span class="identifier">const</span> <span class="keyword">char</span> <span class="operator">*</span><span class="identifier">filename</span> <span class="operator">=</span> <span class="string">&quot;output.txt&quot;</span><span class="punctuation">;</span>
+    <span class="function-name">writeToFile</span><span class="punctuation">(</span><span class="identifier">filename</span><span class="punctuation">,</span> <span class="string">&quot;Hello, File!&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="comment">// Free dynamically allocated memory</span>
+    <span class="function-name">free</span><span class="punctuation">(</span><span class="identifier">dynamicArray</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="keyword">return</span> <span class="number-constant">0</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+
+<span class="comment">// Function to print array elements</span>
+<span class="keyword">void</span> <span class="function-name">printArray</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">arr</span><span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="keyword">int</span> <span class="identifier">size</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;Array elements: &quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">0</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;</span> <span class="identifier">size</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;%d &quot;</span><span class="punctuation">,</span> <span class="identifier">arr</span><span class="punctuation">[</span><span class="identifier">i</span><span class="punctuation">]</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;\n&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+
+</pre>
+</body>
+</html>
