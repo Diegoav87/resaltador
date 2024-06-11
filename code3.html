@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>C Code Highlighting</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<pre id="code">
+<span class="comment">// file1.c</span>
+<span class="include">#include</span> <span class="angle-brackets">&lt;stdio.h&gt;</span>
+
+<span class="keyword">void</span> <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">n</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">1</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;=</span> <span class="identifier">n</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">j</span> <span class="operator">=</span> <span class="number-constant">1</span><span class="punctuation">;</span> <span class="identifier">j</span> <span class="operator">&lt;=</span> <span class="identifier">n</span><span class="punctuation">;</span> <span class="identifier">j</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+            <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;%4d&quot;</span><span class="punctuation">,</span> <span class="identifier">i</span> <span class="operator">*</span> <span class="identifier">j</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+        <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;\n&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">void</span> <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">n</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="keyword">int</span> <span class="identifier">t1</span> <span class="operator">=</span> <span class="number-constant">0</span><span class="punctuation">,</span> <span class="identifier">t2</span> <span class="operator">=</span> <span class="number-constant">1</span><span class="punctuation">,</span> <span class="identifier">nextTerm</span><span class="punctuation">;</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;Fibonacci Series: %d, %d, &quot;</span><span class="punctuation">,</span> <span class="identifier">t1</span><span class="punctuation">,</span> <span class="identifier">t2</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">3</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;=</span> <span class="identifier">n</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="identifier">nextTerm</span> <span class="operator">=</span> <span class="identifier">t1</span> <span class="operator">+</span> <span class="identifier">t2</span><span class="punctuation">;</span>
+        <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;%d, &quot;</span><span class="punctuation">,</span> <span class="identifier">nextTerm</span><span class="punctuation">)</span><span class="punctuation">;</span>
+        <span class="identifier">t1</span> <span class="operator">=</span> <span class="identifier">t2</span><span class="punctuation">;</span>
+        <span class="identifier">t2</span> <span class="operator">=</span> <span class="identifier">nextTerm</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;\n&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">int</span> <span class="function-name">isPrime</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">n</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="keyword">if</span> <span class="punctuation">(</span><span class="identifier">n</span> <span class="operator">&lt;=</span> <span class="number-constant">1</span><span class="punctuation">)</span> <span class="keyword">return</span> <span class="number-constant">0</span><span class="punctuation">;</span>
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">2</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;=</span> <span class="identifier">n</span> <span class="operator">/</span> <span class="number-constant">2</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="keyword">if</span> <span class="punctuation">(</span><span class="identifier">n</span> <span class="operator">%</span> <span class="identifier">i</span> <span class="operator">==</span> <span class="number-constant">0</span><span class="punctuation">)</span> <span class="keyword">return</span> <span class="number-constant">0</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+    <span class="keyword">return</span> <span class="number-constant">1</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">void</span> <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">n</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;Prime numbers up to %d: &quot;</span><span class="punctuation">,</span> <span class="identifier">n</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="keyword">for</span> <span class="punctuation">(</span><span class="keyword">int</span> <span class="identifier">i</span> <span class="operator">=</span> <span class="number-constant">2</span><span class="punctuation">;</span> <span class="identifier">i</span> <span class="operator">&lt;=</span> <span class="identifier">n</span><span class="punctuation">;</span> <span class="identifier">i</span><span class="operator">+</span><span class="operator">+</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+        <span class="keyword">if</span> <span class="punctuation">(</span><span class="function-name">isPrime</span><span class="punctuation">(</span><span class="identifier">i</span><span class="punctuation">)</span><span class="punctuation">)</span> <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;%d, &quot;</span><span class="punctuation">,</span> <span class="identifier">i</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="punctuation">}</span>
+    <span class="function-name">printf</span><span class="punctuation">(</span><span class="string">&quot;\n&quot;</span><span class="punctuation">)</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">int</span> <span class="function-name">main</span><span class="punctuation">(</span><span class="punctuation">)</span> <span class="punctuation">{</span>
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+
+    <span class="function-name">printMultiplicationTable</span><span class="punctuation">(</span><span class="number-constant">10</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printFibonacci</span><span class="punctuation">(</span><span class="number-constant">15</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="function-name">printPrimes</span><span class="punctuation">(</span><span class="number-constant">50</span><span class="punctuation">)</span><span class="punctuation">;</span>
+    <span class="keyword">return</span> <span class="number-constant">0</span><span class="punctuation">;</span>
+<span class="punctuation">}</span></pre>
+</body>
+</html>

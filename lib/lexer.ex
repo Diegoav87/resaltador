@@ -20,6 +20,35 @@ defmodule Lexer do
     {~r/^\s+/, "whitespace"}
   ]
 
+  def process_files(filenames) do
+    {time, _result} =
+      :timer.tc(fn ->
+        tasks =
+          Enum.map(filenames, fn filename ->
+            Task.async(fn ->
+              out_filename = Path.rootname(filename) <> ".html"
+              lexer(filename, out_filename)
+            end)
+          end)
+
+        Enum.map(tasks, &Task.await/1)
+      end)
+
+    IO.puts("Time with parallel processing: #{time / 1_000_000} seconds")
+  end
+
+  def process_files_sequential(filenames) do
+    {time, _result} =
+      :timer.tc(fn ->
+        Enum.each(filenames, fn filename ->
+          out_filename = Path.rootname(filename) <> ".html"
+          lexer(filename, out_filename)
+        end)
+      end)
+
+    IO.puts("Time without parallel processing: #{time / 1_000_000} seconds")
+  end
+
   # Writes the HTML template and processes each line of the file
   def lexer(in_filename, out_filename) do
     {:ok, out_fd} = File.open(out_filename, [:write])

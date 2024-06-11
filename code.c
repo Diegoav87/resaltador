@@ -51,6 +51,2009 @@ int main() {
         y--;
     }
 
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }\
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+    if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+if (x > y) {
+        printf("x is greater than y");
+    } else {
+        printf("y is greater than or equal to x");
+    }
+
+    if (x > 0 && y > 0) {
+        printf("Both x and y are positive numbers");
+    }
+
+    if (x < 0 || y < 0) {
+        printf("At least one of x or y is a negative number");
+    }
+
+    for (int i = 0; i < 5; i++) {
+        printf("i: %d", i);
+    }
+
+    while (y > 0) {
+        printf("y: %d", y);
+        y--;
+    }
+
+
+
+
     char ch = 'A';
     printf("Character literal: %c", ch);
 
